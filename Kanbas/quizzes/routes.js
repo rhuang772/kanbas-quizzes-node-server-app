@@ -14,7 +14,7 @@ function QuizRoutes(app) {
       _id: new Date().getTime().toString(),
     };
     db.quiz.push(newQuiz);
-    res.send(newQuiz);
+    res.send(newQuiz); 
   });
 
   app.get("/api/courses/:cid/quizzes", (req, res) => {
