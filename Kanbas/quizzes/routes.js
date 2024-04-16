@@ -4,7 +4,7 @@ export default function QuizRoutes(app) {
     // retrieve all quizzes associated with a specific course id
     app.get("/api/courses/:cid/quizzes", (req, res) => {
         const { cid } = req.params;
-        const quizzes = db.quizzes.find((q) => q.course === cid);
+        const quizzes = db.quizzes.filter((q) => q.course === cid);
         if (!quizzes) {
             res.status(404).send("Quizzes not found!");
         }
