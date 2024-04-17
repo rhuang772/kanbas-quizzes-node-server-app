@@ -12,10 +12,10 @@ export default function QuizRoutes(app) {
     });
 
     // remove a quiz 
-    app.delete("/api/quizzes/delete/:qid", (req, res) => {
+    app.delete("/api/quizzes/:qid", (req, res) => {
         const { qid } = req.params;
         db.quizzes = db.quizzes.filter((q) => q._id !== qid);
-        res.sendStatus(204);
+        res.sendStatus(200);
     });
 
     // add a new quiz to the db with a unique identifier
@@ -23,7 +23,7 @@ export default function QuizRoutes(app) {
         const { cid } = req.params;
         const quiz = { ...req.body, course: cid, _id: new Date().getTime().toString() };
         db.quizzes.push(quiz);
-        res.sendStatus(204);
+        res.send(quiz);
     });
 
     // edit a quiz
@@ -45,5 +45,5 @@ export default function QuizRoutes(app) {
             (q) => q._id === qid);
         db.quizzes[quizIndex].published = !db.quizzes[quizIndex].published;
         res.send(db.quizzes[quizIndex].published);
-    }) 
+    });
 }
