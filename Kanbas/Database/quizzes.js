@@ -19,6 +19,9 @@ export default [
         "availableDate": "2024-04-10T00:00:00Z",
         "untilDate": "2024-04-20T23:59:59Z",
         "published": false,
+        "timeLimit": 30,
+        "viewResponses": "Always",
+        "for": "Everyone"
     },
     {
         "_id": "2",
@@ -40,6 +43,9 @@ export default [
         "availableDate": "2024-03-10T00:00:00Z",
         "untilDate": "2024-03-20T23:59:59Z",
         "published": false,
+        "timeLimit": 30,
+        "viewResponses": "Always",
+        "for": "Everyone"
     },
     {
         "_id": "3",
@@ -61,6 +67,9 @@ export default [
         "availableDate": "2024-02-10T00:00:00Z",
         "untilDate": "2024-02-20T23:59:59Z",
         "published": false,
+        "timeLimit": 30,
+        "viewResponses": "Always",
+        "for": "Everyone"
     },
     {
         "_id": "4",
@@ -82,5 +91,8 @@ export default [
         "availableDate": "2024-01-10T00:00:00Z",
         "untilDate": "2024-01-20T23:59:59Z",
         "published": false,
+        "timeLimit": 30,
+        "viewResponses": "Always",
+        "for": "Everyone"
     }
 ]
