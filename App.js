@@ -32,7 +32,7 @@ mongoose.connect(CONNECTION_STRING);
 const app = express();
 app.use(cors({
   credentials: true,
-  origin: 'http://localhost:3006'
+  origin: 'http://localhost:3000'
 }));
 const sessionOptions = {
     secret: process.env.SESSION_SECRET,

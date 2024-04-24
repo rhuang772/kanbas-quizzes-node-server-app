@@ -50,6 +50,18 @@ export default [
     },
     {
         _id: "50",
+        quizId: "2",
+        questionType: "True/False",
+        title: "Question 3",
+        points: 1,
+        content: "There are 300 days in a year.",
+        answer: ["False"],
+        options: ["True", "False"],
+        selectedOption: '',
+        numOptions: 4,
+    },
+    {
+        _id: "60",
         quizId: "3",
         questionType: "True/False",
         title: "Question 1",
@@ -61,7 +73,7 @@ export default [
         numOptions: 2,
     },
     {
-        _id: "60",
+        _id: "70",
         quizId: "3",
         questionType: "Multiple Choice",
         title: "Question 2",
@@ -73,7 +85,7 @@ export default [
         numOptions: 4,
     },
     {
-        _id: "70",
+        _id: "80",
         quizId: "4",
         questionType: "Fill In The Blank",
         title: "Question 1",
@@ -85,7 +97,7 @@ export default [
         numOptions: 1,
     },
     {
-        _id: "80",
+        _id: "90",
         quizId: "4", 
         questionType: "True/False",
         title: "Question 2",
